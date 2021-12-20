@@ -42,10 +42,10 @@ body {
     width: 220px;
     height: 220px;
     border-radius: 120px;
-    box-shadow: olive;
     background-color: lightcoral;
-    animation-name: example;
-    animation-duration: 200s;
+    animation-name: lighting;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
 }
 
   
