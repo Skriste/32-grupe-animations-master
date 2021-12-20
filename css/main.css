@@ -1,0 +1,51 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+}
+
+.bulb {
+    width: 220px;
+    height: 400px;
+    background-image: url(../img/bulb.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* The animation code */
+@keyframes example {
+    2%   {background-color: pink;}
+    10%  {background-color: yellow;}
+    20% {background-color: lightgreen;}
+    30% {background-color: limegreen;}
+    40% {background-color: maroon;}
+    50%  {background-color: blue;}
+    60% {background-color: mediumvioletred;}
+    100% {background-color: green;}
+  }
+  
+  /* The element to apply the animation to */
+  .bulb > .light {
+    width: 220px;
+    height: 220px;
+    border-radius: 120px;
+    box-shadow: olive;
+    background-color: lightcoral;
+    animation-name: example;
+    animation-duration: 200s;
+}
+
+  
